@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(225, 100%, 94%);
+}
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "header header"
+        "content content"
+        "footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+
+    grid-row-start: 2;
+    grid-row-end: 7;
+    grid-column-start: 2;
+
+    width: 450px;
+    height: auto;
+    box-shadow: 0 10px 20px rgb(56 41 224 / 10%);
+}
+
+img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-header h1 {
+    font-weight: 900;
+}
+
+.card-body p {
+
+    font-weight: 500;
+    color: #7280a7;
+    font-size: 16px;
+    padding: 0px 60px;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+
+}
+
+.card-price {
+    background-color: #f5f7ff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-radius: 10px;
+    margin: 25px;
+    align-items: center;
+    justify-items: center;
+    padding: 20px 0;
+}
+
+.card-price img {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+.card-price p {
+    margin: 0;
+    text-align: left;
+    grid-column-start: 2;
+    color: #7280a7;
+}
+
+.card-price p:first-of-type {
+    font-weight: 900;
+    color: black;
+}
+
+
+.card-price a {
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 4;
+}
+
+
+.card-price a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+
+.card-buttoms {
+    margin: 0px 25px;
+    font-weight: 900;
+    padding-bottom: 40px;
+
+}
+
+
+.card-buttoms button:first-child {
+    width: 100%;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 18px;
+    box-shadow: 10px 10px 20px rgba(56, 41, 224, 0.1), 15px 15px 30px rgba(56, 41, 224, 0.1);
+}
+
+
+
+.card-buttoms button:first-child:hover {
+    cursor: pointer;
+    opacity: 0.7;
+
+}
+
+
+.card-buttoms p:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
